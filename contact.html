@@ -1,0 +1,379 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Online Flat Sell Service</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
+  
+  
+<!--
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" integrity="sha256-Tcd+6Q3CIltXsx0o/gYhPNbEkb3HJJpucOvQA7csVwI=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" integrity="sha256-fDncdclXlALqR3HOO34OGHxek91q8ApmD3gGldM+Rng=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" integrity="sha256-2DoaRRHfHWna6mpfGImxAx/cu0vFGpqEkcf/YXf+yk4=" crossorigin="anonymous" />-->
+ 
+</head>
+<body class="my-5">
+
+<!-- Top Navbar scroll  -->
+ 
+<!--CONTACT FORM start-->
+<div class=" fom">
+<div class="row">
+<div class="col-xxl-8 col-lg-8 col-md-8 col-sm-10 col-10 mx-auto">
+<div>
+      <form action="" method="POST" class="reg my-5 py-5 w-50 mx-auto">
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text bg-secondary"><i class="fa fa-user text-white"></i></span>
+            </div>
+            <input type="text" class="form-control" name="client-name" placeholder="Your name" autocomplete="off"
+            required value="" >
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text bg-secondary"><i class="fa fa-address-card text-white" aria-hidden="true"></i></span>
+            </div>
+            <input type="text" class="form-control" name="address" placeholder="Your address" autocomplete="off"
+            required value="" >
+          </div>
+        </div>
+
+        
+
+     
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text bg-secondary"><i class="fa fa-mobile text-white" aria-hidden="true"></i></span>
+            </div>
+            <input type="tel" name="mobile" class="form-control" placeholder="Contact no" autocomplete="off" value="" required="contact is required">
+            <div class="input-group-append">
+              <span class="input-group-text ">*123..*</span>        
+            </div>
+          </div>
+        </div>
+
+
+   <div class="form-group ">
+    <select class="form-control" id="exampleFormControlSelect1" name="division">
+      <option>Select your city</option>
+      <option>Dhaka</option>
+      <option>Chattogram</option>
+      <option>Rajshahi</option>
+      <option>Khulna</option>
+      <option>Barisal</option>
+      <option>Sylhet</option>
+      <option>Rangpur</option>
+    </select>
+  </div>
+
+   <div class="form-group">
+    <label for="comment"></label>
+     <textarea class="form-control" rows="5" id="comment" placeholder="your comment" name="comment"></textarea>
+  </div>
+
+      <div class="form-group">
+          <button  type="submit" class="btn btn-warning w-100" name="submit">Submit</button>
+         </div>
+       </form> 
+    </div>
+
+ </div>
+ </div>
+ </div>
+ <div class="">
+   <div class="row">
+     <div class="col-xxl-12 col-lg-12- col-md-12 col-sm-12 col-12">
+       <div id="googleMap"></div>
+     </div>
+   </div>
+ </div>
+<!--CONTACT FORM end-->
+
+<!--About us start-->
+
+<!--About us end -->
+
+
+
+
+
+
+
+  <script type="text/javascript" src="https://www.jqueryscript.net/demo/Modern-Circular-jQuery-Countdown-Timer-Plugin-Final-Countdown/jquery.final-countdown.js"></script> 
+  <script type="text/javascript" src="https://www.jqueryscript.net/demo/Modern-Circular-jQuery-Countdown-Timer-Plugin-Final-Countdown/js/kinetic.js"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+
+
+
+<!--
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js" integrity="sha256-kiFgik3ybDpn1VOoXqQiaSNcpp0v9HQZFIhTgw1c6i0=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" integrity="sha256-4OK8Th0+5QJMThqlimytmqQvxjqMic4YATocjyuUh1w=" crossorigin="anonymous"></script>-->
+<!----Navbar script start---->
+  <script>
+	  $(document).ready(function() {
+  $('.menu-toggle').click(function(){
+	$('nav').toggleClass('active');
+  })
+  
+  $('ul li').click(function(){
+	$(this).siblings().removeClass('active');
+	$(this).toggleClass('active');
+  })
+})
+  </script>
+<!----Navbar script end---->
+
+
+
+
+<!--TOP SCROLL START-->
+<script>
+const btn = document.querySelector('.scroll');
+
+btn.addEventListener('click', function() {
+  scroll(0, 200);
+})
+
+window.onscroll = function showHide() {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    btn.style.transform = 'scale(1)';
+  }
+  else {
+    btn.style.transform = 'scale(0)';
+  }
+}
+
+function scroll (target, duration) {
+  if (duration <= 0) {return};
+  let difference = target - document.documentElement.scrollTop;
+  let speed = difference / duration * 10;
+  setTimeout(function() {
+    document.documentElement.scrollTop += speed;
+    if (document.documentElement.scrollTop == target) {return};
+    scroll(target, duration - 10);
+  }, 10);
+}
+</script>
+<!--TOP SCROLL START-->
+
+<!--read more start-->
+<script>
+    function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
+  </script>
+  <!--read more end-->
+
+ <!--image hover start-->
+ <!--
+ <script>
+      /* Demo purposes only */
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
+  </script>
+-->
+<!--image hover end-->
+
+<!--TYPE WRITTER START -->
+<!--
+<script>
+   // ES6 Class
+class TypeWritter {
+  constructor(txtElement, words, wait = 3000) {
+    this.txtElement = txtElement;
+    this.words = words;
+    this.txt = '';
+    this.wordIndex =0;
+    this.wait = parseInt(wait, 10);
+    this.type();
+    this.isDeleting = false;
+  }
+
+  // Type Method
+  type() {
+    // Current index of word
+    const current = this.wordIndex % this.words.length;
+    // Get full text of current word
+    const fullTxt = this.words[current];
+    // Check if deleting
+    if (this.isDeleting) {
+      // Remove char
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      // Add char
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    //Insert txt into element
+    this.txtElement.innerHTML = `<span class="txt">${
+      this.txt
+    }<span class="blinking-cursor">|</span></span>`;
+
+    // Initial type Speed
+    let typeSpeed = 150;
+
+    if (this.isDeleting) {
+      typeSpeed /= 2;
+    }
+
+    // If word is complete
+    if (!this.isDeleting && this.txt === fullTxt) {
+      // Make pause at end
+      typeSpeed = this.wait;
+      // Set delete to true
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      // Move to next word
+      this.wordIndex++;
+      // Pause before start typing
+      typeSpeed = 500;
+    }
+
+    setTimeout(() => this.type(), typeSpeed);
+  }
+}
+
+// Init on DOM  Load
+document.addEventListener('DOMContentLoaded', init);
+
+// Init App
+function init() {
+  const txtElement = document.querySelector('.txt-type');
+  const words = JSON.parse(txtElement.getAttribute('data-words'));
+  const wait = txtElement.getAttribute('data-wait');
+  // Init TypeWritter
+  new TypeWritter(txtElement, words, wait);
+}
+</script>
+-->
+<!--TYPE WRITTER END -->
+
+<!--AGENT INFORMATION START-->
+   <script>
+    $(function () {
+  $(".material-card > .mc-btn-action").click(function () {
+    var card = $(this).parent(".material-card");
+    var icon = $(this).children("i");
+    icon.addClass("fa-spin-fast");
+
+    if (card.hasClass("mc-active")) {
+      card.removeClass("mc-active");
+
+      window.setTimeout(function () {
+        icon
+          .removeClass("fa-arrow-left")
+          .removeClass("fa-spin-fast")
+          .addClass("fa-bars");
+      }, 800);
+    } else {
+      card.addClass("mc-active");
+
+      window.setTimeout(function () {
+        icon
+          .removeClass("fa-bars")
+          .removeClass("fa-spin-fast")
+          .addClass("fa-arrow-left");
+      }, 800);
+    }
+  });
+});
+</script>
+<!--AGENT INFORMATION END-->
+
+<!--GOOGLE MAP START-->
+<script>
+var myCenter=new google.maps.LatLng(-6.2085841,106.7635933);
+
+function initialize()
+{
+var mapProp = {
+  center: myCenter,
+  zoom:16,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+  title:'Click to zoom'
+  });
+
+marker.setMap(map);
+
+google.maps.event.addListener(marker,'click',function() {
+  map.setZoom(9);
+  map.setCenter(marker.getPosition());
+  });
+     
+google.maps.event.addListener(map,'center_changed',function() {
+
+  window.setTimeout(function() {
+    map.panTo(marker.getPosition());
+  },3000); // 3 detik setelah map digeser akan kembali ke lokasi map utama
+  });
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<!--GOOGLE MAP END-->
+
+<!--VIEW PASSWORD START-->
+<script>
+ function viewPassword()
+ {
+   var passwordInput = document.getElementById('password-field');
+   var passStatus = document.getElementById('pass-status');
+ 
+   if (passwordInput.type == 'password'){
+     passwordInput.type='text';
+     passStatus.className='fa fa-eye-slash';
+    
+   }
+   else{
+     passwordInput.type='password';
+     passStatus.className='fa fa-eye';
+   }
+ }
+ </script>
+<!--VIEW PASSWORD START-->
+
+<!--CUSTOM SELECT SELECT-->
+
+</script>
+
+<!--CUSTOM SELECT SELECT-->
+
+
+</body>
+</html> 
